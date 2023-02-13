@@ -1,0 +1,21 @@
+#image
+	width: 200px
+	height: 200px
+
+i
+	display: inline-block
+	width: 1px
+	height: 1px
+
+	background: rgb(var(--red, 0), var(--green, 0), var(--blue, 0))
+
+$resolution: 8
+@for $i from 0 through $resolution
+	.r#{$i}
+		--red: #{$i * (256 / $resolution)}
+
+	.g#{$i}
+		--green: #{$i * (256 / $resolution)}
+
+	.b#{$i}
+		--blue: #{$i * (256 / $resolution)}

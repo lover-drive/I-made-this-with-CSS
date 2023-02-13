@@ -1,0 +1,12 @@
+{
+  "name": "i-made-it-with-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Alice Loverdrive",
+  "license": "MIT, I guess?",
+  "dependencies": {
+    "get-pixels": "^3.3.3",
+    "pug": "^3.0.2"
+  }
+}

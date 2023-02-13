@@ -1,0 +1,19 @@
+html
+	head
+		title I made this with CSS
+		style(type='text/css')
+			!= style
+
+	body
+		header
+			h1 I made this with CSS for a laugh
+			p The input image is preprocessed with Floyd-Steinberg dithering to reduce amout of colours and then this shit is "rendered" with a 1px squares.
+		main#image
+			- y = 0
+			while y < height
+				- x = 0
+				while x < width
+					i(class=`r${image.get(x, y, 0)} g${image.get(x, y, 1)} b${image.get(x, y, 2)}`)
+					- x++
+				- y++
+			
